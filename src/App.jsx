@@ -1,4 +1,4 @@
-import ProductCard from "./components/ProductCard.jsx";
+import ProductCard from "./components/productcard.jsx";
 
 function App() {
   const productos = [

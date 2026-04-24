@@ -1,4 +1,4 @@
-function ProductCard({ nombre, tono, descripcion, precio }) {
+function productcard({ nombre, tono, descripcion, precio }) {
   return (
     <article className="rounded-3xl border border-rose-100 bg-white p-6 shadow-sm hover:shadow-md transition">
       <div className="aspect-square rounded-2xl bg-gradient-to-br from-rose-100 to-orange-50 flex items-center justify-center">
@@ -31,4 +31,4 @@ function ProductCard({ nombre, tono, descripcion, precio }) {
   );
 }
 
-export default ProductCard;
+export default productcard;
