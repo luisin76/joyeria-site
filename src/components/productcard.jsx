@@ -1,23 +1,31 @@
 function ProductCard({ nombre, tono, descripcion, precio }) {
   return (
-    <article className="rounded-[28px] border border-rose-100 bg-white p-5 shadow-lg shadow-rose-50">
-      <div className="aspect-[4/5] rounded-[22px] bg-gradient-to-br from-pink-200 to-rose-300 flex items-center justify-center">
-        <p className="text-sm text-white font-medium">Foto del producto</p>
+    <article className="rounded-3xl border border-rose-100 bg-white p-6 shadow-sm hover:shadow-md transition">
+      <div className="aspect-square rounded-2xl bg-gradient-to-br from-rose-100 to-orange-50 flex items-center justify-center">
+        <span className="text-5xl">🌸</span>
       </div>
 
       <div className="mt-5">
-        <div className="flex items-start justify-between gap-4">
-          <div>
-            <h3 className="text-xl font-semibold text-[#3d302d]">{nombre}</h3>
-            <p className="text-sm text-rose-500 mt-1">{tono}</p>
-          </div>
+        <p className="text-sm text-rose-400">{tono}</p>
 
-          <span className="rounded-full bg-rose-50 px-3 py-1 text-sm font-medium text-rose-500">
-            {precio}
-          </span>
+        <h3 className="mt-2 text-xl font-semibold text-[#3d302d]">
+          {nombre}
+        </h3>
+
+        <p className="mt-3 text-sm leading-6 text-[#6e5b56]">
+          {descripcion}
+        </p>
+
+        <div className="mt-5 flex items-center justify-between">
+          <p className="font-semibold text-[#3d302d]">{precio}</p>
+
+          <a
+            href="#pedido"
+            className="rounded-xl bg-rose-400 px-4 py-2 text-sm font-medium text-white"
+          >
+            Pedir
+          </a>
         </div>
-
-        <p className="mt-3 text-[#6e5b56] leading-7">{descripcion}</p>
       </div>
     </article>
   );
