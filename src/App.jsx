@@ -1,33 +1,8 @@
 import ProductCard from "./components/productcard.jsx";
+import productos from "./data/products";
 
 function App() {
-  const productos = [
-    {
-      id: 1,
-      nombre: "Aretes Rosa Roja",
-      tono: "Rojo pasión",
-      descripcion:
-        "Un diseño con presencia, ideal para regalar o elevar un outfit sencillo.",
-      precio: "$250 MXN",
-    },
-    {
-      id: 2,
-      nombre: "Aretes Rosa Blanca",
-      tono: "Blanco perla",
-      descripcion:
-        "Delicados, femeninos y fáciles de combinar para un look elegante.",
-      precio: "$250 MXN",
-    },
-    {
-      id: 3,
-      nombre: "Aretes Rosa Lila",
-      tono: "Lila pastel",
-      descripcion:
-        "Una pieza suave y femenina para quienes aman los tonos delicados.",
-      precio: "$250 MXN",
-    },
-  ];
-
+  
   return (
     <div className="min-h-screen bg-[#fffaf8] text-[#4a3b37]">
       <header className="border-b border-rose-100 bg-white">
@@ -118,7 +93,8 @@ function App() {
 
               <p className="mt-4 leading-8 text-[#6e5b56]">
                 Cada pieza se prepara con cuidado, pensando en colores suaves,
-                detalles florales y combinaciones fáciles de usar todos los días.
+                detalles florales y combinaciones fáciles de usar todos los
+                días.
               </p>
             </div>
 
@@ -152,7 +128,7 @@ function App() {
             </p>
 
             <a
-              href="https://wa.me/528672128639"
+              href="https://wa.me/5218672128639?text=Hola,%20quiero%20información%20sobre%20los%20aretes"
               target="_blank"
               rel="noreferrer"
               className="mt-8 inline-flex items-center justify-center rounded-2xl bg-rose-400 px-7 py-3 font-medium text-white"
